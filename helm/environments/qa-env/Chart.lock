@@ -1,0 +1,24 @@
+dependencies:
+- name: goliath-common
+  repository: file://../../goliath-common
+  version: 0.1.0
+- name: configserver
+  repository: file://../../goliath-services/configserver
+  version: 0.1.0
+- name: accounts
+  repository: file://../../goliath-services/accounts
+  version: 0.1.0
+- name: cards
+  repository: file://../../goliath-services/cards
+  version: 0.1.0
+- name: loans
+  repository: file://../../goliath-services/loans
+  version: 0.1.0
+- name: gatewayserver
+  repository: file://../../goliath-services/gatewayserver
+  version: 0.1.0
+- name: message
+  repository: file://../../goliath-services/message
+  version: 0.1.0
+digest: sha256:ea602c1cbb96f2542e25d9e400d12413757fc8ca3656b2381b82a6514d8465bf
+generated: "2025-04-29T16:47:37.7535397-04:00"

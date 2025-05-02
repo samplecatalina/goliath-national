@@ -1,0 +1,7 @@
+*.jar
+dashboard-persistant-token
+local-starter.ps1
+local-stopper.ps1
+k8s-dashboard-starter.ps1
+secret.yaml
+Microservices.postman_collection.json

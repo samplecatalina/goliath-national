@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: goliathprod-configmap
+data:
+  JAVA_TOOL_OPTIONS: -javaagent:/app/libs/opentelemetry-javaagent-1.33.5.jar
+  OTEL_EXPORTER_OTLP_ENDPOINT: http://tempo-grafana-tempo-distributor:4317
+  OTEL_METRICS_EXPORTER: none
+  SPRING.CLOUD.KUBERNETES.DISCOVERY.DISCOVERY-SERVER-URL: http://spring-cloud-kubernetes-discoveryserver:80/
+  SPRING_CLOUD_STREAM_KAFKA_BINDER_BROKERS: kafka-controller-0.kafka-controller-headless.default.svc.cluster.local:9092
+  SPRING_CONFIG_IMPORT: optional:configserver:http://configserver:8071/
+  SPRING_PROFILES_ACTIVE: prod
+  SPRING_SECURITY_OAUTH2_RESOURCESERVER_JWT_JWK-SET-URI: http://keycloak.default.svc.cluster.local:80/realms/master/protocol/openid-connect/certs
+  LOGGING_LEVEL_ROOT: DEBUG
+  LOGGING_LEVEL_ORG_SPRINGFRAMEWORK: DEBUG
+  LOGGING_LEVEL_COM_GOLIATH: DEBUG 

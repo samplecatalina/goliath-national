@@ -1,0 +1,6 @@
+dependencies:
+- name: goliath-common
+  repository: file://../../goliath-common
+  version: 0.1.0
+digest: sha256:1196216f026b1e9c3d01cde327f939a51c356eb43b4fd9468cf95dbf1531c49d
+generated: "2025-04-29T16:38:42.4079903-04:00"

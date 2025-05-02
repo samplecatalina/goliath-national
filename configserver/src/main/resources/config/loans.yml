@@ -1,0 +1,11 @@
+build:
+  version: "3.0"
+
+loans:
+  message: "Welcome to Goliath National Bank loans related local APIs "
+  contactDetails:
+    name: "Wilbur K Pierpont - Developer"
+    email: "pierpont@goliath.com"
+  onCallSupport:
+    - (734) 936-3191
+    - (734) 936-3192
